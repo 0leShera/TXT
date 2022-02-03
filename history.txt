@@ -1,0 +1,157 @@
+olesyascherbakova@MacBook-Pro-Olesa Push GitHub % git clone https://github.com/0leShera/TXT.git
+Cloning into 'TXT'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+olesyascherbakova@MacBook-Pro-Olesa Push GitHub % cd TXT 
+olesyascherbakova@MacBook-Pro-Olesa TXT % cat > new.txt
+
+^C
+olesyascherbakova@MacBook-Pro-Olesa TXT % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	new.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+olesyascherbakova@MacBook-Pro-Olesa TXT % git add new.txt
+olesyascherbakova@MacBook-Pro-Olesa TXT % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   new.txt
+
+olesyascherbakova@MacBook-Pro-Olesa TXT % git commit -m "Add new.txt"
+[main 1c64888] Add new.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 new.txt
+olesyascherbakova@MacBook-Pro-Olesa TXT % git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 274 bytes | 274.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/0leShera/TXT.git
+   f7d24c3..1c64888  main -> main
+olesyascherbakova@MacBook-Pro-Olesa TXT % cat >> new.txt
+ФИО: Некоторые называют меня Мальвиной из-за голубых волос, некоторые - Дюймовочкой, из-за маленького роста, родители назвали Олесей, но...    
+Возраст: 25                         
+Количество домашних животных: 1   
+Будущая желаемая зарплата: 1000    
+^C
+olesyascherbakova@MacBook-Pro-Olesa TXT % git commit -m "Update new.txt"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   new.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+olesyascherbakova@MacBook-Pro-Olesa TXT % git add new.txt
+olesyascherbakova@MacBook-Pro-Olesa TXT % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   new.txt
+
+olesyascherbakova@MacBook-Pro-Olesa TXT % git commit -m "Update new.txt"
+[main 6431f7f] Update new.txt
+ 1 file changed, 4 insertions(+)
+olesyascherbakova@MacBook-Pro-Olesa TXT % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 510 bytes | 510.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/0leShera/TXT.git
+   1c64888..6431f7f  main -> main
+olesyascherbakova@MacBook-Pro-Olesa TXT % cat > preferences.txt
+Любимый фильм: Реквием по мечте
+Любимый сериал: Время приключений
+Любимая еда: вкусная
+Любимое время года: теплое, но не жаркое
+Страна, которую хотели бы посетить: Япония
+^C
+olesyascherbakova@MacBook-Pro-Olesa TXT % cat > skills.txt
+Программа курса:1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.
+2. Что такое клиент-серверная архитектура.
+3. HTTP Методы запросов на сервер.
+4. Коды ответов HTTP сервера.
+5. Структуры HTTP запросов и ответов.
+6. Что такое JSON, XML. Их структура.
+7. Тестирование API через Postman (JS, автотесты API).
+8. Снятие и чтение логов c внешнего сервера.
+9. Снифинг http web трафика через Charles и Fiddler.
+10. Dev Tools веб браузеров (Google Chrome, FireFox).
+11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)
+12. Мобильное тес?ание.
+13. Особенность iOS, Android, гайдлайны.
+14. Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)
+15. Сборка Android приложений на Android Studio.
+16. ADB (управление андройд девайсами).
+17. Настройка прокси и vpn на iOS и Android.
+18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.
+19. Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)
+20. Основы bash скриптинг, автоматизация рутинных задач на сервере.
+21. Доступ к удалённым серверам.
+22. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join).
+23. База данных Postgres (установка, настройка и использование).
+24. Нереляционная база данных Redis (установка, настройка и использование).
+25. Нагрузочное тестирование в Jmeter.
+26. Методология разработки Scrum.
+27. Python. (Изучение основ. Создание клиент серверного приложения)    
+^C
+olesyascherbakova@MacBook-Pro-Olesa TXT % git add preferences.txt skills.txt
+olesyascherbakova@MacBook-Pro-Olesa TXT % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   preferences.txt
+	new file:   skills.txt
+
+olesyascherbakova@MacBook-Pro-Olesa TXT % git commit -m "Add preferences.txt skills.txt"   
+[main f785535] Add preferences.txt skills.txt
+ 2 files changed, 32 insertions(+)
+ create mode 100644 preferences.txt
+ create mode 100644 skills.txt
+olesyascherbakova@MacBook-Pro-Olesa TXT % git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.63 KiB | 1.63 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/0leShera/TXT.git
+   6431f7f..f785535  main -> main
+olesyascherbakova@MacBook-Pro-Olesa TXT % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+olesyascherbakova@MacBook-Pro-Olesa TXT % git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 1 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.89 KiB | 386.00 KiB/s, done.
+From https://github.com/0leShera/TXT
+   f785535..1ce39e6  main       -> origin/main
+Updating f785535..1ce39e6
+Fast-forward
+ bug_report.txt | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 bug_report.txt
